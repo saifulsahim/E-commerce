@@ -1,0 +1,47 @@
+
+  <?php
+                    $customer_id =$this->session->set_userdata('customer_id');
+                    if($customer_id != NULL)
+                    {
+
+                    }
+
+                    ?>
+                    <a class="btn btn-default check_out" href="<?php echo base_url()?>checkout">Check Out</a>
+                    <a class="btn btn-default check_out" href="<?php echo base_url()?>"><span>Continue Shopping</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <?php
+                    $customer_id = $this->session->set_userdata('customer_id');
+                    if ($customer_id != NULL) {
+
+                        ?>
+                        <a class="btn btn-default check_out" href="<?php echo base_url() ?>checkout/billing">CheckOut</a>
+                    <?php }
+                    else {
+                        ?>
+                        <a class="btn btn-default check_out" href="<?php echo base_url() ?>checkout/customer_registration">CheckOut</a>
+                    <?php } ?>
+
+                    <a class="btn btn-default check_out" href="<?php echo base_url()?>">Continue Shopping</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
